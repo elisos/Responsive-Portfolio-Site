@@ -1,0 +1,272 @@
+/*-----------------------*/
+/*BASIC SETUP*/
+/*-----------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #4a4a4a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+img, embed, object, video {
+    max-width: 100%
+}
+
+
+/*----PALETTE COLOURS-----
+dark blue: #00437e
+medium blue: #5798d1
+grey: #8e8e8e
+*/
+
+
+/*-----------------------*/
+/*REUSABLE COMPONENTS*/
+/*-----------------------*/
+h1, h2, h3 {
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    color: #8e8e8e;
+}
+
+h3 {
+    color: #5798d1;
+}
+
+a {
+    text-decoration: none;
+    color: #8e8e8e;
+}
+
+/*---------HEADER SECTION----------*/
+.header {
+    background-color: #ffffff;
+    margin: 15px auto;
+    display: block;
+    height: 100px;
+}
+
+.header-text {
+    margin-right: 15px;
+    display: inline-block;
+    float: right;
+}
+
+h1 {
+    color: #00437e;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.header h3 {
+    text-align: right;
+}
+
+#logo {
+    height: 80px;
+    width: auto;
+    max-width: 100%;
+    margin: 0 20px;
+}
+
+#horizontal { 
+/*I got the idea for this method of creating a horizontal rule from Jonas Schmedtmann's Udemy course "Build Responsive Real World Websites with html5 and css3"*/ 
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #8e8e8e;
+    content: " ";
+    margin: 10px auto;
+}
+
+/*---------MAIN SECTION------------*/
+.hero-img {
+    display: block;
+    margin-top: 15px;
+    max-width: 100%;
+    height: 100%; 
+}
+
+
+.featured {
+    margin-top: 50px;
+}
+
+.featured h2 {
+    margin-left: 7px;
+}
+
+.featured-list {
+    margin-top: 15px;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.featured-item {
+    width: 30%;
+}
+
+.featured-img {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 10px;
+}
+
+.featured-title, .featured-text {
+    text-align: center;
+}
+
+.featured-title {
+    margin: 10px auto;
+    color: #5798d1;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 70%;
+}
+
+/*---------FOOTER SECTION----------*/
+
+footer {
+    background-color: #00437e;
+    height: 90px;
+    bottom: 0;
+}
+.footer-social {
+    list-style: none;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin: 30px 15px 30px 0;
+}
+
+.footer-social li:last-of-type {
+    margin-right: 0;
+}
+
+.social-icon {
+    font-size: 30px;
+    color: #8e8e8e;
+}
+
+/*--------------MEDIA QUERIES---------------*/
+
+
+/*----for mobile----*/
+@media screen and (max-width: 500px) {
+    
+    h1, h2, h3 {
+        font-weight: 400;
+    }
+    
+    h1 {
+        font-size: 120%;
+        margin: 5px 0;
+    }
+    
+    h2 {
+        font-size: 100%;
+    }
+    
+    h3 {
+        font-size: 80%;
+    }
+    
+    #logo {
+        height: 50px;
+        margin-top: 10px;
+    }
+    
+    .header {
+        height: 70px;
+        margin: 5px auto;
+    }
+    
+    #horizontal {
+        height: 2px;
+        margin: 5px auto;
+    }
+    
+    .featured {
+        margin-top: 20px;
+    }
+    
+    
+    .featured-item {
+        width: 70%;
+        margin: 10px auto;
+    }
+    
+    .featured-title {
+        margin: 10px auto 3px auto;
+    }
+    
+    p {
+        font-size: 60%;
+    }
+    
+    footer {
+        height: 60px;
+    }
+
+    .footer-social li {
+        margin: 20px 20px 20px 0;
+    }
+
+    .social-icon {
+        font-size: 20px;
+    }
+}
+
+/*---------mid-sized screens---------*/
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    
+    .featured-title {
+        font-size: 100%;
+    }
+    
+    p {
+        font-size: 60%;
+    }
+    
+    figcaption {
+        font-size: 8px;
+    }
+}
